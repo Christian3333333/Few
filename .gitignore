@@ -1,0 +1,23 @@
+# Dependencias y build
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+
+# Estado local de Cursor. El plan, el spec y los tickets viven en docs/.
+.cursor/
