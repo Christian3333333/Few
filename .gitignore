@@ -21,3 +21,6 @@ Thumbs.db
 
 # Estado local de Cursor. El plan, el spec y los tickets viven en docs/.
 .cursor/
+
+# Datos locales del prototipo (sesión, cotizaciones, vouchers).
+.data/

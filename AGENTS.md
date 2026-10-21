@@ -4,7 +4,7 @@ Prototipo web de remesas de Perú a Europa. El dinero es simulado. El dominio es
 
 Antes de construir, lee estos documentos en este orden:
 
-1. Plan: `docs/plan/plan.md`
+1. Plan: `docs/plan/InitialPlan.md`
 2. Spec: `docs/specs/few-remesas.md`
 3. Tickets: `docs/tickets/tickets.md`
 

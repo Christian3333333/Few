@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4f1ea;
+  --ink: #0a0a0a;
+  --muted: #3a3a3a;
+  --dim: #c9c6bd;
+  --lime: #d7ff1f;
+  --soft: #eaf7a6;
+  --white: #ffffff;
+  --track: #e6e2d8;
+  --danger: #ff3b1f;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-lime: var(--lime);
+  --color-soft: var(--soft);
+  --color-track: var(--track);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--track);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
