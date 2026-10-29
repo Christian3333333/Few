@@ -1,6 +1,6 @@
 # Few
 
-Prototipo web para enviar soles desde Perú a Europa. El dinero es simulado. La cotización, la cuenta y el historial son reales.
+Aplicación web en construcción para enviar dinero entre Perú y Europa. Actualmente el dinero es simulado. La cotización, la cuenta y el historial son reales.
 
 Publicado en [few-two.vercel.app](https://few-two.vercel.app).
 
@@ -16,9 +16,11 @@ Publicado en [few-two.vercel.app](https://few-two.vercel.app).
 
 Europa hacia Perú se muestra y no se puede elegir.
 
-## Cómo se calcula
+## Cómo se calcula el envío
 
-El monto va de S/ 50 a S/ 20,000. La comisión es el 1% de lo enviado. Lo que recibe la otra persona es el monto dividido entre el tipo del país. Todo queda en dos decimales.
+Se puede enviar entre S/ 50 y S/ 20,000. La comisión es el 1% de lo enviado. 
+
+Tipos de cambio usados (aun sin implementar API):
 
 | Moneda | Tipo fijo |
 | --- | --- |
@@ -26,7 +28,9 @@ El monto va de S/ 50 a S/ 20,000. La comisión es el 1% de lo enviado. Lo que re
 | Franco suizo (CHF) | S/ 4.45 |
 | Libra (GBP) | S/ 4.85 |
 
-Al continuar, ese tipo queda bloqueado 15 minutos y nace una referencia `FEW-` de cinco dígitos. El voucher es un JPG, PNG o PDF de hasta 10 MB. Nadie lo coteja contra un banco.
+Al iniciar la operación, ese tipo de canbio queda bloqueado 15 minutos y nace una referencia `FEW-` de cinco dígitos. 
+
+Debes subir un comprobante de pago (JPG, PNG o PDF de hasta 10 MB). Actualmente nadie lo coteja contra un banco.
 
 El estado se calcula al leer, desde el instante en que se envió el voucher:
 
@@ -36,7 +40,7 @@ El estado se calcula al leer, desde el instante en que se envió el voucher:
 | 20 a 40 segundos | El dinero ya va |
 | Desde los 40 segundos | Confirmado |
 
-## Países
+## Países a los que se puede enviar
 
 España, Italia, Alemania, Francia, Países Bajos, Portugal, Bélgica e Irlanda usan euro. Suiza usa franco suizo. Reino Unido usa libra.
 
